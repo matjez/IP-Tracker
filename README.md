@@ -17,6 +17,10 @@
  
  If you have at lest one host added to list you can track devices. Click 'Start' next to the hostname then 'Start tracking'.
  
+ ![alt text](https://i.ibb.co/PzMLPbX/ip-tracker-adding.png)
+ 
+ 
+ 
 When the host responds status will change from 'N/A' to 'ON'(if unreachable - 'OFF'). 
 
-![alt text](https://i.ibb.co/BKCGLn7/ip-tracker-3.png)
+![alt text](https://i.ibb.co/TTKLKJ5/ip-tracker-on-off.png)
