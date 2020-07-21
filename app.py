@@ -1,4 +1,3 @@
-from datetime import datetime
 import os
 import threading
 import subprocess
@@ -11,6 +10,7 @@ import tkinter.ttk as ttk
 import tkinter as tk
 import sys
 
+from datetime import datetime
 from tkinter import Tk, Label, Button, Entry, IntVar, END, W, E, StringVar, Canvas, Scrollbar
 from netaddr import IPNetwork
 
@@ -18,7 +18,7 @@ from netaddr import IPNetwork
 class IPTracker:
 
     def __init__(self, master):
-        """ Creating variables and window frames. """
+        """ Creating global variables and frames. """
 
         self._FINISH = False
         self._FINISH_SEARCHING = False
@@ -90,7 +90,7 @@ class IPTracker:
   
         self.top_label = Label(self.frame1,text="Devices tracker",font=("",12))
 
-        # layout
+        # layout 1
 
         self.top_label.pack(pady=3)
 
@@ -110,7 +110,7 @@ class IPTracker:
         self.settings = Button(self.frame2, text="Settings",width=6,command=self.create_settings_window)
         vcmd = master.register(self.validate)
     
-        # layout
+        # layout 2
 
         self.drop_list.grid(row=0, column=0, sticky=W) 
         self.combobox.grid(row=0, column=1, sticky=W) 
@@ -131,7 +131,7 @@ class IPTracker:
 
         self.run_tracking_button = Button(self.frame3,text="Run tracking",command=lambda: self.track())
 
-        # layout
+        # layout 3
 
         self.ip_address_label.grid(row=0, column=0, sticky=W) 
         self.custom_ip_1.grid(row=0, column=1, sticky=W) 
@@ -215,9 +215,7 @@ class IPTracker:
                                 
                     except:
                         pass
-        except Exception as e:
-            exc_type, exc_obj, exc_tb = sys.exc_info()
-            fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+        except:
             ret = []
         return ret
 
