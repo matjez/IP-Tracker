@@ -1,5 +1,5 @@
 # About IP-Tracker
- GUI application for devices tracking.
+ GUI application for devices tracking.(Under development)
 
 # Requirements
  - Windows OS
