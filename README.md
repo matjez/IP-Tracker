@@ -1,6 +1,5 @@
 # About IP-Tracker
- GUI application for devices tracking.(Under development)
-
+ GUI application for devices tracking.
 # Requirements
  - Windows OS
  - Python 3+
@@ -17,8 +16,8 @@
  
  If you have at lest one host added to list you can track devices. Click 'Start' next to the hostname then 'Start tracking'.
  
- ![alt text](https://i.ibb.co/PzMLPbX/ip-tracker-adding.png)
  
+ ![alt text](https://i.ibb.co/PzMLPbX/ip-tracker-adding.png)
  
  
 When the host responds status will change from 'N/A' to 'ON'(if unreachable - 'OFF'). 
